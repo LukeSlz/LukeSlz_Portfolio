@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
-import './index.scss';
+import './sidebar.scss';
 import LogoW from '../../assets/images/WOLF.png';
 import LogoSubtitle from '../../assets/images/logo_sub_Luke.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

@@ -1,4 +1,6 @@
-$primary-color: #0042cf;
+$primary-color: #0437F2;    /* Ultramarine */
+$secondary-color: #000080;  /* Navy */
+$back-color: #8c909c;  /* Denim */
 
 @import 'animate.css';
 
@@ -14,6 +16,7 @@ $primary-color: #0042cf;
   font-family: 'Coolvetica';
   src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
 }
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 input,
 textarea {

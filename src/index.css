@@ -6,7 +6,7 @@ body {
   margin: 0;
   font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif; /* weight f-size/line-heigh f-family */
   color: #444;
-  background: #022c43;
+  background: #8c909c;  /* Denim */
   overflow: hidden;
   display: block;
   -webkit-font-smoothing: antialiased;

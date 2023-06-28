@@ -3,6 +3,7 @@ import LogoW from '../../assets/images/WOLF.png'
 import './home.scss';
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters/animatedLetters';
+import Logo from '../Logo/logo';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -29,7 +30,7 @@ const Home = () => {
           <span className={`${letterClass} __14`}>I</span>
           <span className={`${letterClass} __15`}>'m</span>
 
-        <img src={LogoW} alt="Luke's image" />
+        <img src={LogoW} alt="Luke's logo" />
         <br />
         <AnimatedLetters letterClass={letterClass} strArr={nameArr} idx={16} />
         <br />
@@ -39,6 +40,8 @@ const Home = () => {
         <h2>Frontend | Backend | FullStack</h2>
         <Link to="/contact" className='flat-button'>CONTACT ME</Link>
       </div>
+
+      <Logo />
     </div>
   )
 

@@ -1,14 +1,8 @@
 import './logo.scss';
-import LogoW from '../../assets/images/WOLF.png';
-import { useRef } from 'react';
+import LogoW from '../../../assets/images/WOLF.png';
 
 
 const Logo = () => {
-
-  const bgRef = useRef();
-  const outlineLogoRef = useRef();
-  const solidLogoRef = useRef();
-  
 
   return (
     <div className="logo-container">

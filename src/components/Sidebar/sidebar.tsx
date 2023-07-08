@@ -3,11 +3,15 @@ import './sidebar.scss';
 import LogoW from '../../assets/images/WOLF.png';
 import LogoSubtitle from '../../assets/images/logo_sub_Luke.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRightArrowLeft, faHome } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope, faUser } from '@fortawesome/free-regular-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => (
+  <>
+      <div className="side-toggle">
+      <FontAwesomeIcon icon={faArrowRightArrowLeft} color='#0437F2' />
+    </div>
  <div className="nav-bar">
     <Link className='logo' to='/'>
       <img src={LogoW} className='logo__wolf' alt='logo' />
@@ -37,5 +41,6 @@ const Sidebar = () => (
       </li>
     </ul>
  </div>
+  </>
 )
 export default Sidebar;

@@ -1,0 +1,19 @@
+.text-zone {
+  width: 70% !important;
+}
+.skills-logo-container {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .skills-logo {
+    width: calc(90%/6);
+
+    img {
+      width: 90%;
+      margin-bottom: 30px;
+    }
+  }
+
+}

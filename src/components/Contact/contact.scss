@@ -17,10 +17,15 @@
       opacity: 0;
       animation: fadeInUp 2s 2s;
       animation-fill-mode: forwards;
+
+      input, textarea {
+        font: {
+          family: 'Inter';
+        }
+      }
     }
 
     .basic-data {
-      width: 80%;
       display: flex;
       justify-content: space-between;
       
@@ -32,6 +37,7 @@
     input::placeholder,
     textarea::placeholder  {
       color: #000080;
+      font-family: 'Inter', sans-serif;
     }
 
     input[type='text'],
@@ -69,6 +75,11 @@
       border: 2px solid #000080;
       float: right;
       border-radius: 4px;
+
+      &:hover {
+        background: #fff;
+        cursor: pointer;
+      }
     }
   }
 }

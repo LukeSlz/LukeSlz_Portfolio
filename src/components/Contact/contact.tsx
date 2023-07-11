@@ -10,7 +10,7 @@ const Contact = () => {
   const contact: string = "Contact me";
   const contactArr: string[] = contact.split(''); 
 
-  const refForm = useRef;
+  const refForm = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
     setTimeout(() => {
@@ -21,14 +21,26 @@ const Contact = () => {
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      'service',
-      'template',
-      refForm.current,
-      'key'
-
-    )
-    
+    if (refForm.current) {
+      emailjs.sendForm(
+        'default_service',
+        'template_z16q55n',
+        refForm.current,
+        'uNNcxYIsaFnPXSnZS'
+      )
+        .then(
+          (res) => {
+            alert('Message successfully sent!');
+            console.log("Success!!", res.status, res.text);
+            window.location.reload();
+          },
+          (error) => {
+            alert('Failed to send the message, please try again');
+            console.log(error);
+            
+          }
+        )
+    }
   }
 
 
@@ -40,17 +52,17 @@ const Contact = () => {
             <AnimatedLetters letterClass={letterClass} strArr={contactArr} idx={15} />
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dicta aperiam recusandae amet vitae odio quas a itaque alias iste expedita, quidem officiis debitis enim laboriosam quibusdam, excepturi quis facere!
+            As a versatile developer with a keen interest in front-end, back-end, and full-stack projects, I am passionate about continuously learning and improving my skills. I approach each day with a drive to expand my knowledge and explore new technologies. I have engaged in numerous academic projects that have honed my abilities. I am now eagerly seeking opportunities to apply my problem-solving mindset and contribute to meaningful solutions. Let's connect and embark on a journey of innovation and growth together.
           </p>
           <div className="contact-form">
-            <form ref={refForm} onSubmit={sendEmail}>
+            <form ref={refForm as React.RefObject<HTMLFormElement>} onSubmit={sendEmail}>
               <ul>
                 <div className="basic-data">
                   <li className="half">
                     <input type="text" name="name" id="name" placeholder='Name' required />
                   </li>
                   <li className="half">
-                    <input type="email" name="email" id="name" placeholder='Email' required />
+                    <input type="email" name="email" id="email" placeholder='Email' required />
                   </li>
                 </div>
                 <li>

@@ -42,7 +42,8 @@
 }
 
 .about-page,
-.contact-page {
+.contact-page,
+.skills-page {
   .text-zone {
     position: absolute;
     left: 10%;
@@ -88,7 +89,7 @@
     }
 
     p {
-      font-size: 15px;
+      font-size: 16px;
       color: #000;
       font-family: sans-serif;
       min-width: fit-content;

@@ -101,6 +101,11 @@
           content: 'ABOUT';
         }
       }
+      &.skills-link {
+        &::after {
+          content: 'SKILLS';
+        }
+      }
       &.contact-link {
         &::after {
           content: 'CONTACT';

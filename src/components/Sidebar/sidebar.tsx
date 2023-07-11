@@ -3,7 +3,7 @@ import './sidebar.scss';
 import LogoW from '../../assets/images/WOLF.png';
 import LogoSubtitle from '../../assets/images/logo_sub_Luke.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRightArrowLeft, faHome } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRightArrowLeft, faCode, faHome } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope, faUser } from '@fortawesome/free-regular-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
@@ -23,6 +23,9 @@ const Sidebar = () => (
       </NavLink>
       <NavLink className={navData => `about-link ${navData.isActive ? "active" : ""}`} to="/about">    {/* activeclassname is deprecated for React Router v6 */}
         <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+      </NavLink>
+      <NavLink className={navData => `skills-link ${navData.isActive ? "active" : ""}`} to="/skills">    {/* activeclassname is deprecated for React Router v6 */}
+        <FontAwesomeIcon icon={faCode} color="#4d4d4e" />
       </NavLink>
       <NavLink className={navData => `contact-link ${navData.isActive ? "active" : ""}`} to="/contact">    {/* activeclassname is deprecated for React Router v6 */}
         <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />

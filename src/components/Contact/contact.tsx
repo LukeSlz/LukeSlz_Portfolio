@@ -32,7 +32,7 @@ const Contact = () => {
           (res) => {
             alert('Message successfully sent!');
             console.log("Success!!", res.status, res.text);
-            window.location.reload();
+            window.location.replace('https://lukeslz.github.io/Portfolio/');
           },
           (error) => {
             alert('Failed to send the message, please try again');

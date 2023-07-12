@@ -30,7 +30,7 @@ const Skills = () => {
   return (
     <>
       <div className="container skills-page">
-        <div className="text-zone">
+        <div className="text-zone skills-text-zone">
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
@@ -39,39 +39,72 @@ const Skills = () => {
             />
           </h1>
           <div className="skills-logo-container">
-            <a href="#" className="skills-logo">
-              <img src={logoReact} alt="React" className="skills-logo-img" />
-            </a>
-            <a href="#" className="skills-logo">
-              <img src={logoTS} alt="TypeScript" className="skills-logo-img" />
-            </a>
-            <a href="#" className="skills-logo">
-              <img src={logoJS} alt="JavaScript" className="skills-logo-img" />
-            </a>
-            <a href="#" className="skills-logo">
-              <img src={logoAng} alt="Angular" className="skills-logo-img" />
-            </a>
-            <a href="#" className="skills-logo">
-              <img src={logoNodeJS} alt="Node JS" className="skills-logo-img" />
-            </a>
-            <a href="#" className="skills-logo">
-              <img src={logoJava} alt="Java" className="skills-logo-img" />
-            </a>
-            <a href="#" className="skills-logo">
-              <img src={logoSpring} alt="Spring" className="skills-logo-img" />
-            </a>
-            <a href="#" className="skills-logo">
-              <img src={logoHTML} alt="HTML" className="skills-logo-img" />
-            </a>
-            <a href="#" className="skills-logo">
-              <img src={logoSASS} alt="SASS" className="skills-logo-img" />
-            </a>
-            <a href="#" className="skills-logo">
-              <img src={logoCSS} alt="CSS" className="skills-logo-img" />
-            </a>
-            <a href="#" className="skills-logo">
-              <img src={logoGit} alt="GIT" className="skills-logo-img" />
-            </a>
+            <button className="skills-logo">
+              <div className="skills-logo-img-cont">
+                <img src={logoReact} alt="React" className="skills-logo-img" />
+                <h2 className="skills-logo-name">React</h2>
+              </div>
+            </button>
+            <button className="skills-logo">
+              <div className="skills-logo-img-cont">
+                <img src={logoTS} alt="TypeScript" className="skills-logo-img" />
+                <h2 className="skills-logo-name">TypeScript</h2>
+              </div>
+            </button>
+            <button className="skills-logo">
+              <div className="skills-logo-img-cont">
+                <img src={logoJS} alt="JavaScript" className="skills-logo-img" />
+                <h2 className="skills-logo-name">JavaScript</h2>
+              </div>
+            </button>
+            <button className="skills-logo">
+              <div className="skills-logo-img-cont">
+                <img src={logoAng} alt="Angular" className="skills-logo-img" />
+                <h2 className="skills-logo-name">Angular</h2>
+              </div>
+            </button>
+            <button className="skills-logo">
+              <div className="skills-logo-img-cont">
+                <img src={logoNodeJS} alt="Node JS" className="skills-logo-img" />
+                <h2 className="skills-logo-name">Node JS</h2>
+              </div>
+            </button>
+            <button className="skills-logo">
+              <div className="skills-logo-img-cont">
+                <img src={logoJava} alt="Java" className="skills-logo-img" />
+                <h2 className="skills-logo-name">Java</h2>
+              </div>
+            </button>
+            <button className="skills-logo">
+              <div className="skills-logo-img-cont">
+                <img src={logoSpring} alt="Spring" className="skills-logo-img" />
+                <h2 className="skills-logo-name">Spring</h2>
+              </div>
+            </button>
+            <button className="skills-logo">
+              <div className="skills-logo-img-cont">
+                <img src={logoHTML} alt="HTML" className="skills-logo-img" />
+                <h2 className="skills-logo-name">HTML</h2>
+              </div>
+            </button>
+            <button className="skills-logo">
+              <div className="skills-logo-img-cont">
+                <img src={logoSASS} alt="SASS" className="skills-logo-img" />
+                <h2 className="skills-logo-name">SASS</h2>
+              </div>
+            </button>
+            <button className="skills-logo">
+              <div className="skills-logo-img-cont">
+                <img src={logoCSS} alt="CSS" className="skills-logo-img" />
+                <h2 className="skills-logo-name">CSS</h2>
+              </div>
+            </button>
+            <button className="skills-logo">
+              <div className="skills-logo-img-cont">
+                <img src={logoGit} alt="GIT" className="skills-logo-img" />
+                <h2 className="skills-logo-name">GIT</h2>
+              </div>
+            </button>
           </div>
         </div>
       </div>

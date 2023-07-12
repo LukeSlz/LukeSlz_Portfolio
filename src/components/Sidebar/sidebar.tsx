@@ -3,15 +3,15 @@ import './sidebar.scss';
 import LogoW from '../../assets/images/WOLF.png';
 import LogoSubtitle from '../../assets/images/logo_sub_Luke.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRightArrowLeft, faCode, faHome } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelope, faUser } from '@fortawesome/free-regular-svg-icons';
+import { faCode, faHome } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faUser, faFilePdf } from '@fortawesome/free-regular-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => (
   <>
-      <div className="side-toggle">
+{/*       <div className="side-toggle">
       <FontAwesomeIcon icon={faArrowRightArrowLeft} color='#0437F2' />
-    </div>
+    </div> */}
  <div className="nav-bar">
     <Link className='logo' to='/'>
       <img src={LogoW} className='logo__wolf' alt='logo' />
@@ -26,6 +26,9 @@ const Sidebar = () => (
       </NavLink>
       <NavLink className={navData => `skills-link ${navData.isActive ? "active" : ""}`} to="/skills">    {/* activeclassname is deprecated for React Router v6 */}
         <FontAwesomeIcon icon={faCode} color="#4d4d4e" />
+      </NavLink>
+      <NavLink className={navData => `cv-link ${navData.isActive ? "active" : ""}`} to="/CV">    {/* activeclassname is deprecated for React Router v6 */}
+        <FontAwesomeIcon icon={faFilePdf} color="#4d4d4e" />
       </NavLink>
       <NavLink className={navData => `contact-link ${navData.isActive ? "active" : ""}`} to="/contact">    {/* activeclassname is deprecated for React Router v6 */}
         <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />

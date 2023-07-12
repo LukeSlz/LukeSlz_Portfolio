@@ -13,24 +13,24 @@ const Sidebar = () => (
       <FontAwesomeIcon icon={faArrowRightArrowLeft} color='#0437F2' />
     </div> */}
  <div className="nav-bar">
-    <Link className='logo' to='/'>
+    <Link className='logo' to='/Portfolio'>
       <img src={LogoW} className='logo__wolf' alt='logo' />
       <img className='sub-logo' src={LogoSubtitle} alt='Luke Slz' />
     </Link>
     <nav>
-      <NavLink className={navData => navData.isActive ? "active" : ""} to="/">    {/* activeclassname is deprecated for React Router v6 */}
+      <NavLink className={navData => navData.isActive ? "active" : ""} to="/Portfolio">    {/* activeclassname is deprecated for React Router v6 */}
         <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
       </NavLink>
-      <NavLink className={navData => `about-link ${navData.isActive ? "active" : ""}`} to="/about">    {/* activeclassname is deprecated for React Router v6 */}
+      <NavLink className={navData => `about-link ${navData.isActive ? "active" : ""}`} to="/Portfolio/about">    {/* activeclassname is deprecated for React Router v6 */}
         <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
       </NavLink>
-      <NavLink className={navData => `skills-link ${navData.isActive ? "active" : ""}`} to="/skills">    {/* activeclassname is deprecated for React Router v6 */}
+      <NavLink className={navData => `skills-link ${navData.isActive ? "active" : ""}`} to="/Portfolio/skills">    {/* activeclassname is deprecated for React Router v6 */}
         <FontAwesomeIcon icon={faCode} color="#4d4d4e" />
       </NavLink>
-      <NavLink className={navData => `cv-link ${navData.isActive ? "active" : ""}`} to="/CV">    {/* activeclassname is deprecated for React Router v6 */}
+      <NavLink className={navData => `cv-link ${navData.isActive ? "active" : ""}`} to="/Portfolio/CV">    {/* activeclassname is deprecated for React Router v6 */}
         <FontAwesomeIcon icon={faFilePdf} color="#4d4d4e" />
       </NavLink>
-      <NavLink className={navData => `contact-link ${navData.isActive ? "active" : ""}`} to="/contact">    {/* activeclassname is deprecated for React Router v6 */}
+      <NavLink className={navData => `contact-link ${navData.isActive ? "active" : ""}`} to="/Portfolio/contact">    {/* activeclassname is deprecated for React Router v6 */}
         <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
       </NavLink>
     </nav>

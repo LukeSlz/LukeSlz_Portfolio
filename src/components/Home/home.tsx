@@ -40,7 +40,7 @@ const Home = () => {
         </h1>
 
         <h2>Frontend | Backend | FullStack</h2>
-        <Link to="/contact" className='flat-button'>CONTACT ME</Link>
+        <Link to="/Portfolio/contact" className='flat-button'>CONTACT ME</Link>
       </div>
 
       <Logo />

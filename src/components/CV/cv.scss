@@ -1,0 +1,31 @@
+.cvs-container {
+  margin: 20% 0;
+  display: flex;
+
+  div {
+    width: 50%;
+    text-align: center;
+
+  }
+}
+.CV-icon {
+  content: '';
+  font-size: 15rem;
+  color: #000080;
+  i {
+    transition: all 0.3s ease-out;
+  }
+
+  &:hover {
+    color: #0437F2; /* Ultramarine */;
+  }
+}
+.to-CV {
+  text-decoration: none;
+  h2 {
+    color: #fff;
+    font: {
+      size: 2em;
+    }
+  }
+}

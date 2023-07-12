@@ -4,7 +4,6 @@ import AnimatedLetters from '../AnimatedLetters/animatedLetters';
 import Loader from 'react-loaders';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf } from '@fortawesome/free-regular-svg-icons';
-import { NavLink } from 'react-router-dom';
 
 const Cv = () => {
 
@@ -31,11 +30,17 @@ const Cv = () => {
           </h1>
           <div className="cvs-container">
             <div className="each-cv-cont">
-                <NavLink className='to-CV' to='/CV/en'>
-                  <FontAwesomeIcon icon={faFilePdf} />
-                </NavLink>
+              <a className='to-CV' href='/CV'>
+                <FontAwesomeIcon icon={faFilePdf} className='CV-icon' />
+                <h2>English</h2>
+              </a>
             </div>
-            <div className="each-cv-cont"></div>
+            <div className="each-cv-cont">
+              <a className='to-CV' href='/CV'>
+                <FontAwesomeIcon icon={faFilePdf} className='CV-icon' />
+                <h2>Spanish</h2>
+              </a>
+            </div>
           </div>
         </div>
       </div>

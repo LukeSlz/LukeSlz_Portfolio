@@ -65,8 +65,9 @@
     }
 
     .flat-button {
-      color: #0437F2;
+      color: #000080;
       background: 0 0;
+      background-color: #7b9cdf;
       font: 12px;
       font-weight: bold;
       letter-spacing: 3px;
@@ -77,8 +78,9 @@
       border-radius: 4px;
 
       &:hover {
-        background: #fff;
+        background: #000080;
         cursor: pointer;
+        color: #fff;
       }
     }
   }

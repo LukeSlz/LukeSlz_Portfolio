@@ -31,13 +31,13 @@ const Cv = () => {
           <h2>Here you can get my CV in your preferred language</h2>
           <div className="cvs-container">
             <div className="each-cv-cont">
-              <a className='to-CV' href={process.env.PUBLIC_URL + '/assets/docs/CV_Lucas_Salazar.pdf'} target='_blank'>
+              <a className='to-CV' href='/Portfolio/CV_Lucas_Salazar.pdf' target='_blank'>
                 <FontAwesomeIcon icon={faFilePdf} className='CV-icon' />
                 <h3>English</h3>
               </a>
             </div>
             <div className="each-cv-cont">
-              <a className='to-CV' href={process.env.PUBLIC_URL + '/assets/docs/CV_Lucas_Salazar_ESP.pdf'} target='_blank' >
+              <a className='to-CV' href='/Portfolio/CV_Lucas_Salazar_ESP.pdf' target='_blank' >
                 <FontAwesomeIcon icon={faFilePdf} className='CV-icon' />
                 <h3>Spanish</h3>
               </a>

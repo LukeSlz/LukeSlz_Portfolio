@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.f4caeb47.css",
+    "main.js": "/Portfolio/static/js/main.46d0f2a3.js",
+    "static/js/787.4be1cc77.chunk.js": "/Portfolio/static/js/787.4be1cc77.chunk.js",
+    "static/media/logo_React.png": "/Portfolio/static/media/logo_React.8a6fc0a24a800d1e0f4a.png",
+    "static/media/logo_Java.png": "/Portfolio/static/media/logo_Java.fdabd4e11f1235e4e8e0.png",
+    "static/media/logo_SASS.png": "/Portfolio/static/media/logo_SASS.7cdbf6b5889c42b3e490.png",
+    "static/media/WOLF.png": "/Portfolio/static/media/WOLF.30dd67bae57a40f8b7f1.png",
+    "static/media/logo_Spring.png": "/Portfolio/static/media/logo_Spring.256928e4cb82a438bd22.png",
+    "static/media/helvetica-neu.ttf": "/Portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/logo_TS.png": "/Portfolio/static/media/logo_TS.16b157ea18cd87601675.png",
+    "static/media/logo_nodeJS.png": "/Portfolio/static/media/logo_nodeJS.c6649cb118c1ede849ad.png",
+    "static/media/logo_Angular.png": "/Portfolio/static/media/logo_Angular.ea9c274178f0927fbfac.png",
+    "static/media/LaBelleAurore.woff2": "/Portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/logo_sub_Luke.png": "/Portfolio/static/media/logo_sub_Luke.8544f03213c75a7a51e2.png",
+    "static/media/logo_JS.png": "/Portfolio/static/media/logo_JS.db393457bf6303d846d6.png",
+    "static/media/CoolveticaRg-Regular.woff2": "/Portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/Portfolio/index.html",
+    "main.f4caeb47.css.map": "/Portfolio/static/css/main.f4caeb47.css.map",
+    "main.46d0f2a3.js.map": "/Portfolio/static/js/main.46d0f2a3.js.map",
+    "787.4be1cc77.chunk.js.map": "/Portfolio/static/js/787.4be1cc77.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4caeb47.css",
+    "static/js/main.46d0f2a3.js"
+  ]
+}

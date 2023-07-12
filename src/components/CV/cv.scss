@@ -1,6 +1,17 @@
+h2 {
+  font-size: 2em;
+  color: #000;
+  margin-top: 10%;
+  animation: fadeInUp 1s 1s;
+  animation-fill-mode: forwards;
+}
 .cvs-container {
-  margin: 20% 0;
+  margin: 10% 0;
   display: flex;
+  opacity: 0;
+  animation: fadeInUp 2s 2s;
+  animation-fill-mode: forwards;
+
 
   div {
     width: 50%;
@@ -22,7 +33,7 @@
 }
 .to-CV {
   text-decoration: none;
-  h2 {
+  h3 {
     color: #fff;
     font: {
       size: 2em;

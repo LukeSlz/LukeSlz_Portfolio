@@ -54,6 +54,9 @@ const Contact = () => {
           <p>
             As a versatile developer with a keen interest in front-end, back-end, and full-stack projects, I am passionate about continuously learning and improving my skills. I approach each day with a drive to expand my knowledge and explore new technologies. I have engaged in numerous academic projects that have honed my abilities. I am now eagerly seeking opportunities to apply my problem-solving mindset and contribute to meaningful solutions. Let's connect and embark on a journey of innovation and growth together.
           </p>
+          <p>
+            You can contact me using this form or with a direct <a id='email' href="mailto:luke.slz.dev@gmail.com">email.</a>
+          </p>
           <div className="contact-form">
             <form ref={refForm as React.RefObject<HTMLFormElement>} onSubmit={sendEmail}>
               <ul>

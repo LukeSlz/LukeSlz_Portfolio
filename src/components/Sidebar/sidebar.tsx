@@ -18,7 +18,7 @@ const Sidebar = () => (
       <img className='sub-logo' src={LogoSubtitle} alt='Luke Slz' />
     </Link>
     <nav>
-      <NavLink className={navData => navData.isActive ? "active" : ""} to="/Portfolio">    {/* activeclassname is deprecated for React Router v6 */}
+      <NavLink className={navData => navData.isActive ? "active" : ""} to="/Portfolio/">    {/* activeclassname is deprecated for React Router v6 */}
         <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
       </NavLink>
       <NavLink className={navData => `about-link ${navData.isActive ? "active" : ""}`} to="/Portfolio/about">    {/* activeclassname is deprecated for React Router v6 */}

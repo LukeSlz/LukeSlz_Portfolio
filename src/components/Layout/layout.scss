@@ -39,6 +39,8 @@
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
+  display: flex;
+  align-items: center;
 }
 
 .about-page,
@@ -46,14 +48,14 @@
 .skills-page,
 .cv-page {
   .text-zone {
-    height: 90%;
     position: absolute;
     left: 13em;
-    transform: translateY(-50%);
-    top: 50%;
-    width: 40%;
-    vertical-align: middle;
-    display: table-cell;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 1;
 
     h1 {
       font-size: 53px;

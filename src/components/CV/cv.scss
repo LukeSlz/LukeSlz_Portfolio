@@ -1,12 +1,18 @@
+.cv-page {
+  display: flex;
+  align-items: center;
+}
+
 h2 {
   font-size: 2em;
   color: #000;
-  margin-top: 10%;
+  margin-top: 5%;
   animation: fadeInUp 1s 1s;
   animation-fill-mode: forwards;
 }
 .cvs-container {
-  margin: 10% 0;
+  width: 100%;
+  margin: 5% 0;
   display: flex;
   opacity: 0;
   animation: fadeInUp 2s 2s;

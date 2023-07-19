@@ -8,3 +8,40 @@
   justify-content: space-around;
   align-items: flex-start;
 }
+#note {
+  opacity: 0.6;
+  span {
+    font-weight: bold;
+  }
+}
+.projects__area {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  .project__container {
+    position: relative;
+    width: 22%;
+    margin: 1em;
+    text-align: center;
+    transition: all 0.5s;
+    img {
+      width: 100px;
+    }
+    h3 {
+      position: absolute;
+      margin: 0;
+      bottom: 0;
+      font-size: 16px;
+      backdrop-filter: blur(6px);
+      color: #fff;
+    }
+    p {
+      display: none;
+    }
+
+    &:hover {
+      background-color: #fff;
+      border-radius: 20px;
+    }
+  }
+}

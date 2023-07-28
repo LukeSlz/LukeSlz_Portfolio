@@ -4,12 +4,13 @@ import AnimatedLetters from '../AnimatedLetters/animatedLetters';
 import { Project } from './Project';
 import { mockProjects } from './mockData';
 import { projectsDB } from './projectsDB';
+import Modal from './ProjectModal/Modal';
 
 interface ProjectProps {
   projects: Project[];
 }
 
-const Projects = () => {
+const Projects: React.FC = () => {
 
   const projectsToShow: Project[] = projectsDB.length > 1 ? projectsDB : mockProjects;
 
@@ -22,6 +23,15 @@ const Projects = () => {
       return setLetterClass('text-animate-hover')
     }, 3000)
   }, []);
+
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  }
 
 
 
@@ -45,10 +55,15 @@ const Projects = () => {
         </div>
         <div className="projects__area">
           {projectsToShow.map((project) => (
-            <div className="project__container" key={project.id}>
+            <div className="project__container" key={project.id} onClick={openModal}>
               <img src={project.img} alt={`Imag related to the ${project.name} project`} />
               <h3>{project.name}</h3>
               <p>Stack: {project.stack.join(" | ")}</p>
+            <Modal isOpen={modalIsOpen} onClose={closeModal}>
+              <h2>This is the modal</h2>
+              <p>Content comes here</p>
+              <button onClick={closeModal}>Close modal</button>
+            </Modal>
             </div>
           ))}
         </div>

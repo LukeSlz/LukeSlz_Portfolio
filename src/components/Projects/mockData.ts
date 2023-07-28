@@ -9,6 +9,7 @@ export const mockProjects: Project[] = [
     stack: ['React', 'TypeScript'],
     description: 'This is project 1.',
     role: 'Web Developer',
+    repo: 'url',
   },
   {
     id: 2,
@@ -17,5 +18,6 @@ export const mockProjects: Project[] = [
     stack: ['Angular', 'JavaScript'],
     description: 'This is project 2.',
     role: 'Frontend Developer',
+    repo: 'url',
   },
 ]

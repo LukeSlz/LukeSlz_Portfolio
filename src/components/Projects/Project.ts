@@ -5,4 +5,5 @@ export interface Project {
   stack: string[];
   description: string;
   role: string;
+  repo: string;
 };

@@ -8,7 +8,8 @@ export const projectsDB: Project[] = [
     name: 'FINT_FRONTEND',
     stack: ['Angular', 'TypeScript', 'SASS', 'Bootstrap', 'API Consumption'],
     description: "FINT is an innovative proposal for a Web Educational Platform designed to provide comprehensive financial education to people from diverse backgrounds and contexts. Developed in response to a demand from a leading financial company, FINT aims to offer valuable insights on financial literacy, investment strategies, and smart savings tips. \n The project has undergone extensive market research, paving the way for its well-structured initial proposal. Currently, the focus lies in developing the platform's frontend, ensuring a user-friendly interface and an engaging learning experience.",
-    role: 'Frontend Developer - Angular / TypeScript'
+    role: 'Frontend Developer - Angular / TypeScript',
+    repo: 'url',
   },
   {
     id: 2,
@@ -16,7 +17,8 @@ export const projectsDB: Project[] = [
     name: 'FINT_BACKEND',
     stack: ['Angular', 'TypeScript', 'SASS', 'Bootstrap', 'API Consumption'],
     description: "FINT is an innovative proposal for a Web Educational Platform designed to provide comprehensive financial education to people from diverse backgrounds and contexts. Developed in response to a demand from a leading financial company, FINT aims to offer valuable insights on financial literacy, investment strategies, and smart savings tips. \n The project has undergone extensive market research, paving the way for its well-structured initial proposal. Currently, the focus lies in developing the platform's frontend, ensuring a user-friendly interface and an engaging learning experience.",
-    role: 'Frontend Developer - Angular / TypeScript'
+    role: 'Frontend Developer - Angular / TypeScript',
+    repo: 'url',
   },
   {
     id: 3,
@@ -24,7 +26,8 @@ export const projectsDB: Project[] = [
     name: 'FINT_BACKEND',
     stack: ['Angular', 'TypeScript', 'SASS', 'Bootstrap', 'API Consumption'],
     description: "FINT is an innovative proposal for a Web Educational Platform designed to provide comprehensive financial education to people from diverse backgrounds and contexts. Developed in response to a demand from a leading financial company, FINT aims to offer valuable insights on financial literacy, investment strategies, and smart savings tips. \n The project has undergone extensive market research, paving the way for its well-structured initial proposal. Currently, the focus lies in developing the platform's frontend, ensuring a user-friendly interface and an engaging learning experience.",
-    role: 'Frontend Developer - Angular / TypeScript'
+    role: 'Frontend Developer - Angular / TypeScript',
+    repo: 'url',
   },
   {
     id: 4,
@@ -32,7 +35,8 @@ export const projectsDB: Project[] = [
     name: 'FINT_BACKEND',
     stack: ['Angular', 'TypeScript', 'SASS', 'Bootstrap', 'API Consumption'],
     description: "FINT is an innovative proposal for a Web Educational Platform designed to provide comprehensive financial education to people from diverse backgrounds and contexts. Developed in response to a demand from a leading financial company, FINT aims to offer valuable insights on financial literacy, investment strategies, and smart savings tips. \n The project has undergone extensive market research, paving the way for its well-structured initial proposal. Currently, the focus lies in developing the platform's frontend, ensuring a user-friendly interface and an engaging learning experience.",
-    role: 'Frontend Developer - Angular / TypeScript'
+    role: 'Frontend Developer - Angular / TypeScript',
+    repo: 'url',
   },
   {
     id: 4,
@@ -40,7 +44,8 @@ export const projectsDB: Project[] = [
     name: 'FINT_BACKEND',
     stack: ['Angular', 'TypeScript', 'SASS', 'Bootstrap', 'API Consumption'],
     description: "FINT is an innovative proposal for a Web Educational Platform designed to provide comprehensive financial education to people from diverse backgrounds and contexts. Developed in response to a demand from a leading financial company, FINT aims to offer valuable insights on financial literacy, investment strategies, and smart savings tips. \n The project has undergone extensive market research, paving the way for its well-structured initial proposal. Currently, the focus lies in developing the platform's frontend, ensuring a user-friendly interface and an engaging learning experience.",
-    role: 'Frontend Developer - Angular / TypeScript'
+    role: 'Frontend Developer - Angular / TypeScript',
+    repo: 'url',
   },
   {
     id: 4,
@@ -48,6 +53,7 @@ export const projectsDB: Project[] = [
     name: 'FINT_BACKEND',
     stack: ['Angular', 'TypeScript', 'SASS', 'Bootstrap', 'API Consumption'],
     description: "FINT is an innovative proposal for a Web Educational Platform designed to provide comprehensive financial education to people from diverse backgrounds and contexts. Developed in response to a demand from a leading financial company, FINT aims to offer valuable insights on financial literacy, investment strategies, and smart savings tips. \n The project has undergone extensive market research, paving the way for its well-structured initial proposal. Currently, the focus lies in developing the platform's frontend, ensuring a user-friendly interface and an engaging learning experience.",
-    role: 'Frontend Developer - Angular / TypeScript'
+    role: 'Frontend Developer - Angular / TypeScript',
+    repo: 'url',
   },
 ]

@@ -1,0 +1,55 @@
+.modal__overlay {
+  position: fixed;
+  z-index: 999;
+  top: -28px;
+  left: -53px;
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 30vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  position: absolute;
+  border: 3px dashed red;
+  border-radius: 30px;
+  text-align: center;
+  padding: 3em;
+  margin: 30% 20% 20% 10%;
+  background-color: #fff;
+  animation: fadeIn 1s forwards;
+
+  &__content {
+    animation: fadeIn 1s forwards;
+    h3 {
+      margin: 0 0 1rem;
+      font-size: 2.5vw;
+    }
+    img {
+      width: 20%;
+      margin: 1em;
+    }
+    p {
+      font-size: 15px;
+      color: #000;
+      font-family: sans-serif;
+      min-width: fit-content;
+      animation: pulse 1s;
+  
+      &:nth-of-type(1){
+        animation-delay: 0.1s;
+      }
+      &:nth-of-type(2){
+        animation-delay: 0.2s;
+      }
+      &:nth-of-type(3){
+        animation-delay: 0.3s;
+      }
+      &:nth-of-type(4){
+        animation-delay: 0.4s;
+      }
+    }
+  }
+}

@@ -4,11 +4,9 @@ import AnimatedLetters from '../AnimatedLetters/animatedLetters';
 import { Project } from './Project';
 import { mockProjects } from './mockData';
 import { projectsDB } from './projectsDB';
-import Modal from './ProjectModal/Modal';
+import Modal from './Modal/Modal';
 
-interface ProjectProps {
-  projects: Project[];
-}
+
 
 const Projects: React.FC = () => {
 
@@ -24,16 +22,13 @@ const Projects: React.FC = () => {
     }, 3000)
   }, []);
 
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const openModal = () => {
-    setModalIsOpen(true);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const handleProjectClick = (project: Project) => {
+    setSelectedProject(project);
   };
-
-  const closeModal = () => {
-    setModalIsOpen(false);
-  }
-
-
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+  };
 
   return (
     <>
@@ -55,17 +50,28 @@ const Projects: React.FC = () => {
         </div>
         <div className="projects__area">
           {projectsToShow.map((project) => (
-            <div className="project__container" key={project.id} onClick={openModal}>
+            <div 
+              className="project__container" 
+              key={project.id} 
+              onClick={() => {handleProjectClick(project)}}
+            >
               <img src={project.img} alt={`Imag related to the ${project.name} project`} />
               <h3>{project.name}</h3>
               <p>Stack: {project.stack.join(" | ")}</p>
-            <Modal isOpen={modalIsOpen} onClose={closeModal}>
-              <h2>This is the modal</h2>
-              <p>Content comes here</p>
-              <button onClick={closeModal}>Close modal</button>
-            </Modal>
             </div>
           ))}
+
+            {selectedProject && (
+              <Modal onClose={handleCloseModal}>
+                <h3>{selectedProject.name}</h3>
+                <img src={selectedProject.img} alt={`Imag related to the ${selectedProject.name} project`} />
+                <p>{selectedProject.description}</p>
+                <p>Tech Stack: {selectedProject.stack.join(" | ")}</p>
+                <p>Role: {selectedProject.role}</p>
+                <p>{selectedProject.repo}</p>
+              </Modal>
+            )}
+
         </div>
       </div>
     </>

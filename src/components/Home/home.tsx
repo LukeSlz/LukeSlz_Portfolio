@@ -25,7 +25,7 @@ const Home = () => {
     <>
     <div className="container home-page">
       <div className="text-zone">
-        <h1>
+        <h1 className='main-title'>
           <span className={letterClass}>H</span>
           <span className={`${letterClass} __12`}>i</span>
           <span className={`${letterClass} __13 comma`}>,</span>

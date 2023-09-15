@@ -1,11 +1,21 @@
 import { Project } from "./Project";
 import LogoW from "../../assets/images/WOLF.png";
+import Gnosis_Logo from "../../assets/images/Gnosis_logo.png";
 import FINT_logo from "../../assets/images/FINT.png";
 import LUXER_logo from "../../assets/images/Luxer.png";
 
 export const projectsDB: Project[] = [
   {
     id: 1,
+    img: Gnosis_Logo,
+    name: 'Gnosis',
+    stack: ['React JS', 'TypeScript', 'SASS', 'Tailwind'],
+    description: "With the premise of 'Helping people in their paths to learn, improve and practice new skills', Gnosis starts as project to create an user-friendly and intuitive web application that works as a knowledge Host and Community Hub. The main idea was presented with a working demo.",
+    role: 'Frontend Developer - React JS | TypeScript',
+    repo: 'https://github.com/LukeSlz/FINT_Frontend',
+  },
+  {
+    id: 2,
     img: FINT_logo,
     name: 'FINT FRONTEND',
     stack: ['Angular', 'TypeScript', 'SASS', 'Bootstrap', 'API Consumption'],
@@ -14,7 +24,7 @@ export const projectsDB: Project[] = [
     repo: 'https://github.com/LukeSlz/FINT_Frontend',
   },
   {
-    id: 2,
+    id: 3,
     img: FINT_logo,
     name: 'FINT BACKEND',
     stack: ['Java', 'Spring', 'Spring Boot', 'JWT', 'Endpoints'],
@@ -23,7 +33,7 @@ export const projectsDB: Project[] = [
     repo: 'https://github.com/LukeSlz/FINT_Backend',
   },
   {
-    id: 3,
+    id: 4,
     img: LUXER_logo,
     name: 'LuxerStudio Project',
     stack: ['React JS', 'Node JS', 'Express JS', 'JavaScript', 'MySQL', 'Sequelize', 'HTML5', 'CSS3', 'APIs'],
@@ -32,7 +42,7 @@ export const projectsDB: Project[] = [
     repo: 'https://github.com/LukeSlz/Grupo_1_Luxer',
   },
   {
-    id: 4,
+    id: 5,
     img: LogoW,
     name: 'MercadoLiebre',
     stack: ['Node JS', 'HTML5', 'CSS3'],

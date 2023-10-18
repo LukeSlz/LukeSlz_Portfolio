@@ -6,4 +6,5 @@ export interface Project {
   description: string;
   role: string;
   repo: string;
+  live?: string;
 };

@@ -1,4 +1,4 @@
-.nav-bar{
+.nav-bar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -21,17 +21,18 @@
       width: 50px;
       height: auto;
 
-      &:first-of-type{
+      &:first-of-type {
         border-radius: 50%;
         background-color: white;
       }
     }
 
-    &.sub-logo{
+    &.sub-logo {
       width: 50px;
     }
   }
-  nav{
+
+  nav {
     display: block;
     text-align: center;
     top: 50%;
@@ -50,14 +51,18 @@
       }
 
       &:hover {
-        color: #0437F2; /* Ultramarine */
-        svg{
+        color: #0437F2;
+
+        /* Ultramarine */
+        svg {
           opacity: 0;
         }
+
         &::after {
           opacity: 1;
         }
       }
+
       &::after {
         content: '';
         font-size: 12px;
@@ -72,36 +77,42 @@
       }
 
       &:first-child {
-        &::after{
+        &::after {
           content: 'HOME';
         }
       }
+
       &.about-link {
         &::after {
           content: 'ABOUT';
         }
       }
+
       &.skills-link {
         &::after {
           content: 'SKILLS';
         }
       }
+
       &.cv-link {
         &::after {
           content: 'CV';
           font-size: 1.5rem;
         }
       }
+
       &.projects-link {
         &::after {
           content: 'PROJECTS';
         }
       }
+
       &.contact-link {
         &::after {
           content: 'CONTACT';
         }
       }
+
       &.active {
         svg {
           color: #0437F2;
@@ -125,7 +136,7 @@
         font-size: 25px;
         line-height: 16px;
 
-        &:hover svg{
+        &:hover svg {
           color: #0042cf;
         }
       }

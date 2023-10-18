@@ -50,27 +50,35 @@ const Projects: React.FC = () => {
         </div>
         <div className="projects__area">
           {projectsToShow.map((project) => (
-            <div 
-              className="project__container" 
-              key={project.id} 
-              onClick={() => {handleProjectClick(project)}}
+            <div
+              className="project__container"
+              key={project.id}
+              onClick={() => { handleProjectClick(project) }}
             >
-              <img src={project.img} alt={`Imag related to the ${project.name} project`} />
+              <img src={project.img} alt={`${project.name} project's visual presentation`} />
               <h3>{project.name}</h3>
               <p>Stack: {project.stack.join(" | ")}</p>
             </div>
           ))}
 
-            {selectedProject && (
-              <Modal onClose={handleCloseModal}>
-                <h3>{selectedProject.name}</h3>
-                <img src={selectedProject.img} alt={`Logo related to the ${selectedProject.name} project`} />
-                <p>{selectedProject.description}</p>
-                <p><strong>Tech Stack:</strong> {selectedProject.stack.join(" | ")}</p>
-                <p><strong>Role:</strong> {selectedProject.role}</p>
-                <a href={selectedProject.repo} target='_blank' rel='noreferrer'><p>Project's Source Code</p></a>
-              </Modal>
-            )}
+          {selectedProject && (
+            <Modal onClose={handleCloseModal}>
+              <h3>{selectedProject.name}</h3>
+              <img src={selectedProject.img} alt={`Logo related to the ${selectedProject.name} project`} />
+              <p>{selectedProject.description}</p>
+              <p><strong>Tech Stack:</strong> {selectedProject.stack.join(" | ")}</p>
+              <p><strong>Role:</strong> {selectedProject.role}</p>
+              {selectedProject.live ? (
+                <a href={selectedProject.live} target='_blank' rel='noreferrer'>
+                  <p className='live-demo-link pulse'>Project's Live Demo</p>
+                </a>
+              ) : (
+                <a href={selectedProject.repo} target='_blank' rel='noreferrer'>
+                  <p className='source-code-link'>Project's Source Code</p>
+                </a>
+              )}
+            </Modal>
+          )}
 
         </div>
       </div>

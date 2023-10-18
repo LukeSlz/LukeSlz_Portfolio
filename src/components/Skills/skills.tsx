@@ -41,8 +41,8 @@ const Skills = () => {
           <div className="skills-logo-container">
             <button className="skills-logo">
               <div className="skills-logo-img-cont">
-                <img src={logoReact} alt="React" className="skills-logo-img" />
-                <h2 className="skills-logo-name">React</h2>
+                <img src={logoJS} alt="JavaScript" className="skills-logo-img" />
+                <h2 className="skills-logo-name">JavaScript</h2>
               </div>
             </button>
             <button className="skills-logo">
@@ -53,20 +53,20 @@ const Skills = () => {
             </button>
             <button className="skills-logo">
               <div className="skills-logo-img-cont">
-                <img src={logoJS} alt="JavaScript" className="skills-logo-img" />
-                <h2 className="skills-logo-name">JavaScript</h2>
+                <img src={logoNodeJS} alt="Node JS" className="skills-logo-img" />
+                <h2 className="skills-logo-name">Node JS</h2>
+              </div>
+            </button>
+            <button className="skills-logo">
+              <div className="skills-logo-img-cont">
+                <img src={logoReact} alt="React" className="skills-logo-img" />
+                <h2 className="skills-logo-name">React</h2>
               </div>
             </button>
             <button className="skills-logo">
               <div className="skills-logo-img-cont">
                 <img src={logoAng} alt="Angular" className="skills-logo-img" />
                 <h2 className="skills-logo-name">Angular</h2>
-              </div>
-            </button>
-            <button className="skills-logo">
-              <div className="skills-logo-img-cont">
-                <img src={logoNodeJS} alt="Node JS" className="skills-logo-img" />
-                <h2 className="skills-logo-name">Node JS</h2>
               </div>
             </button>
             <button className="skills-logo">

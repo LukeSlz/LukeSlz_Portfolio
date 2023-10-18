@@ -9,7 +9,7 @@ import Loader from 'react-loaders';
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
   const name: string = "Luke Salazar";
-  const job: string = "Web Developer";
+  const job: string = "Software Developer";
   const nameArr: string[] = name.split("");
   const jobArr: string[] = job.split("");
   
@@ -36,7 +36,7 @@ const Home = () => {
         <br />
         <AnimatedLetters letterClass={letterClass} strArr={nameArr} idx={16} />
         <br />
-        <AnimatedLetters letterClass={letterClass} strArr={jobArr} idx={28} />
+        <AnimatedLetters letterClass={letterClass} strArr={jobArr} idx={23} />
         </h1>
 
         <h2>Frontend | Backend | FullStack</h2>

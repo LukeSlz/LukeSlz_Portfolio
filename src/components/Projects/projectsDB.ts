@@ -3,10 +3,23 @@ import LogoW from "../../assets/images/WOLF.png";
 import Gnosis_Logo from "../../assets/images/Gnosis_logo.png";
 import FINT_logo from "../../assets/images/FINT.png";
 import LUXER_logo from "../../assets/images/Luxer.png";
+import Notes_Logo from "../../assets/images/NoteTakingApp.jpeg";
+
+//TODO refactor each project's info into an object.
 
 export const projectsDB: Project[] = [
   {
     id: 1,
+    img: Notes_Logo,
+    name: 'Notes Taking App',
+    stack: ['Node JS', 'Express', 'React', 'TypeScript', 'PostgreSQL', 'Prisma ORM', 'SASS'],
+    description: "A classic of the Web Development. This is a fully deployed Fullstack Web Project that features a Backend server made with Node JS and its framework Express JS. Functioning over a Relational Database (PostgreSQL) connected with Prisma ORM. And the frontend UI is made with React JS.At the moment, you can find the source code in my GitHub",
+    role: 'Fullstack Developer - Node JS | Express JS | React | TypeScript',
+    repo: 'https://lukeslz.github.io/notes_app/',
+    live: 'https://lukeslz.github.io/notes_app/'
+  },
+  {
+    id: 2,
     img: Gnosis_Logo,
     name: 'Gnosis',
     stack: ['React JS', 'TypeScript', 'SASS', 'Tailwind'],
@@ -15,7 +28,7 @@ export const projectsDB: Project[] = [
     repo: 'https://github.com/LukeSlz/FINT_Frontend',
   },
   {
-    id: 2,
+    id: 3,
     img: FINT_logo,
     name: 'FINT FRONTEND',
     stack: ['Angular', 'TypeScript', 'SASS', 'Bootstrap', 'API Consumption'],
@@ -24,7 +37,7 @@ export const projectsDB: Project[] = [
     repo: 'https://github.com/LukeSlz/FINT_Frontend',
   },
   {
-    id: 3,
+    id: 4,
     img: FINT_logo,
     name: 'FINT BACKEND',
     stack: ['Java', 'Spring', 'Spring Boot', 'JWT', 'Endpoints'],
@@ -33,7 +46,7 @@ export const projectsDB: Project[] = [
     repo: 'https://github.com/LukeSlz/FINT_Backend',
   },
   {
-    id: 4,
+    id: 5,
     img: LUXER_logo,
     name: 'LuxerStudio Project',
     stack: ['React JS', 'Node JS', 'Express JS', 'JavaScript', 'MySQL', 'Sequelize', 'HTML5', 'CSS3', 'APIs'],
@@ -42,7 +55,7 @@ export const projectsDB: Project[] = [
     repo: 'https://github.com/LukeSlz/Grupo_1_Luxer',
   },
   {
-    id: 5,
+    id: 6,
     img: LogoW,
     name: 'MercadoLiebre',
     stack: ['Node JS', 'HTML5', 'CSS3'],

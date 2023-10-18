@@ -3,7 +3,7 @@ import Sidebar from '../Sidebar/sidebar';
 import './layout.scss';
 
 const Layout = () => {
-  return  (
+  return (
     <div className='App'>
       <Sidebar />
       <div className="page">
@@ -12,9 +12,9 @@ const Layout = () => {
         <Outlet />
 
         <span className="tags tags__bottom">
-        &lt;/body&gt;
-        <br />
-        <span className="tags__bottom__html">&lt;/html&gt;</span>
+          &lt;/body&gt;
+          <br />
+          <span className="tags__bottom__html">&lt;/html&gt;</span>
         </span>
       </div>
     </div>
